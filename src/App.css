@@ -1,0 +1,39 @@
+.app-container {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 1fr 90px;
+  grid-template-areas:
+    "sidebar main"
+    "player player";
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-sidebar);
+  gap: 8px;
+  padding: 8px;
+  padding-bottom: 0;
+}
+
+/* Rounded Spotify style layout */
+.sidebar-area {
+  grid-area: sidebar;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.main-area {
+  grid-area: main;
+  background-color: var(--bg-base);
+  border-radius: 8px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.player-area {
+  grid-area: player;
+  background-color: var(--bg-player);
+  border-top: 1px solid transparent; /* removing line, blending with bg */
+  padding: 0 16px;
+  z-index: 10;
+}

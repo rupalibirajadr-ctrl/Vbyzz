@@ -1,0 +1,123 @@
+.auth-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, var(--bg-base), #121212);
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: inherit;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 450px;
+  background: var(--bg-elevated);
+  padding: 48px;
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+
+.auth-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.auth-logo-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #a259ff, #ff59af);
+  box-shadow: 0 4px 16px rgba(162, 89, 255, 0.5);
+}
+
+.auth-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.auth-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+  line-height: 1.3;
+}
+
+.form-group {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  background-color: var(--bg-highlight);
+  border: 1px solid #4d4d4d;
+  color: var(--text-primary);
+  padding: 14px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #a259ff;
+  box-shadow: 0 0 0 1px #a259ff;
+}
+
+[data-theme='light'] .form-group input {
+  border-color: #b3b3b3;
+}
+
+.auth-submit-btn {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(to right, #a259ff, #ff59af);
+  color: white;
+  border: none;
+  border-radius: 500px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 16px;
+  box-shadow: 0 8px 24px rgba(162, 89, 255, 0.3);
+}
+
+.auth-toggle {
+  margin-top: 32px;
+  text-align: center;
+  border-top: 1px solid #282828;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+[data-theme='light'] .auth-toggle {
+  border-top: 1px solid #e5e5e5;
+}
+
+.text-btn {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 8px;
+}
