@@ -7,7 +7,7 @@ export const getAccessToken = async () => {
   if (accessToken) return accessToken;
 
   try {
-    const response = await fetch('/api/token', {
+    const response = await fetch('https://accounts.spotify.com/api/token', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
